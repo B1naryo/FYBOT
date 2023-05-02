@@ -41,8 +41,9 @@
   const nextPageUrl = `home.html?iframeUrl=${encodedUrl}`;
 
   // Redireciona para a próxima página
+window.location.href = nextPageUrl;
+
 const randomSeconds = Math.round(Math.random() * 10000); // Gera segundos aleatórios até 10 segundos
-  window.location.href = nextPageUrl;
 }, randomSeconds);
 	</script>
 
