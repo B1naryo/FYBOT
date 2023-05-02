@@ -37,45 +37,6 @@
 		document.getElementById('my-iframe').src = iframeUrl;
 		setInterval(function() {
 			const iframeUrl = document.getElementById('my-iframe').src;
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		body, html {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-		iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			height: 100vh;
-			border: none;
-		}
-		
-	</style>
-</head>
-<body onload="carregarUrl()">
-
-	<iframe id="my-iframe" width="560" height="315" title="Iframe"></iframe>
-
-	<script src="substituirurl.js"></script>
-	<script>
-		function carregarUrl() {
-			const params = new URLSearchParams(window.location.search);
-			const url = params.get('url');
-			substituirIframe(url);
-		}
-	
-		const params = new URLSearchParams(window.location.search);
-		const iframeUrl = params.get('iframeUrl');
-		document.getElementById('my-iframe').src = iframeUrl;
-		setInterval(function() {
-			const iframeUrl = document.getElementById('my-iframe').src;
 
   // Codifica a URL e adiciona como parâmetro de consulta na próxima página
   const encodedUrl = encodeURIComponent(iframeUrl);
@@ -90,16 +51,3 @@
 </body>
 </html>
 
-  // Codifica a URL e adiciona como parâmetro de consulta na próxima página
-  const encodedUrl = encodeURIComponent(iframeUrl);
-  const nextPageUrl = `home1.html?iframeUrl=${encodedUrl}`;
-
-
-  // Redireciona para a próxima página
-  window.location.href = nextPageUrl;
-		}, 6000);
-	</script>
-
-
-</body>
-</html>
