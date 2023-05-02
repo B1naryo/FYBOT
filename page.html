@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fybot </title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+			
+			
+		
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      
+      }
+      .book-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      .header {
+        background-color: #4CAF50;
+        padding: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .title {
+        font-size: 24px;
+        margin: 0;
+        color: white;
+      }
+   h4 {
+        text-align: justify;
+      }
+      .menu {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .menu li {
+        margin-right: 20px;
+      }
+      .menu li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+        background: url("img/back.jpg") no-repeat center center fixed;
+        background-size: cover;
+
+      }
+      .book {
+        width: 600px;
+        height: 400px;
+        border: 10px solid #4CAF50;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      .footer {
+        background-color: #4CAF50;
+        padding: 20px;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book-container">
+      <div class="header">
+ <h1 class="title">FYBOT</h1>
+
+
+        <ul class="menu">
+      
+      <li><a href="about.html" target="_blank">About</a></li>
+  <li><a href="struction.html" target="_blank">Instructions</a></li>
+  <li><a href="https://t.me/sandro520099" target="_blank">Contact</a></li>
+  <li><a href="https://www.facebook.com/sandro.cerquei" target="_blank">Facebook</a></li>
+  <li><a href="donation.html" target="_blank">Donation</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <div class="book">
+     <div class="box">
+        <label for="new-iframe">Insert the new iframe URL:</label>
+         <input type="text" id="new-iframe" name="new-iframe">
+            <button onclick="adicionarUrl()">Adicionar URL</button>
+            <script src="substituir-iframe.js"></script>
+<script>
+		function adicionarUrl() {
+			const url = document.getElementById('new-iframe').value;
+			window.location.href = `home.html?url=${encodeURIComponent(url)}`;
+		}
+	</script>
+
+<h4>Enter the link to your Facebook or YouTube page you want to view. This bot will help you increase your page views and engagement. Please make sure to use Tor browser, that the page is public and that you have permission to view it. Please note that using bots to artificially increase views is against Facebook and YouTube's terms of service.</h4>
+<a href="index.html">Portuguese</a>
+<a href="page.html">English</a>
+         </div>
+        </div>
+      </div>
+      <div class="footer">
+        <center><p>Developed by Sandro in 2023</p></center>
+      </div>
+    </div>
+  </body>
+</html>

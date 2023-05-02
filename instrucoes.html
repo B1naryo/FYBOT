@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Instruções</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      
+      }
+      .book-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        background-color: #f5f5f5;
+      }
+      .header {
+        background-color: #4CAF50;
+        padding: 20px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      .title {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+}
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+background: url("img/back.jpg") no-repeat center center fixed;
+			background-size: cover;
+
+      }
+      .book {
+        width: 600px;
+        height: 400px;
+        border: 10px solid #4CAF50;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      .footer {
+        background-color: #4CAF50;
+        padding: 20px;
+        box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book-container">
+      <div class="header">
+        <center><h1 class="title">Instruções</h1></center>
+      </div>
+      <div class="content">
+        <div class="book">
+          <p style="text-align: justify;">Para utilizar esta aplicação, é recomendado o uso do navegador Tor. Para baixá-lo, acesse https://www.torproject.org/download/ e escolha a opção correspondente ao seu sistema operacional.<br
+>Se você recarregar a página no navegador TOR, seu IP será alterado. <br>
+O TOR é projetado para rotear o tráfego da Internet através de uma rede de servidores proxy em todo o mundo para ocultar sua localização e identidade. <br>
+Cada servidor proxy na rede TOR encaminha o tráfego para o próximo servidor na cadeia, criptografando o tráfego em cada etapa para garantir que ele não possa ser rastreado de volta ao usuário original. <br>
+Como resultado, cada vez que você se conecta à rede TOR, sua conexão passa por uma nova rota de servidores proxy, alterando seu endereço IP. No entanto, é importante observar que o uso do TOR não garante o anonimato completo e pode haver maneiras de identificar a fonte do tráfego.<br></p>
+        </div>
+      </div>
+      <div class="footer">
+        <center><p>Desenvolvido por Sandro em 2023</p></center>
+      </div>
+    </div>
+  </body>
+</html>
+
