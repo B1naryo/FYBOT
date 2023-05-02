@@ -28,4 +28,3 @@ function obterVideoId(url) {
 		return null;
 	}
 }
-
