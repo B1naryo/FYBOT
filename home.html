@@ -43,11 +43,19 @@
   const nextPageUrl = `home1.html?iframeUrl=${encodedUrl}`;
 
   // Redireciona para a próxima página
-			  window.location.href = nextPageUrl;
+const randomSeconds = Math.round(Math.random() * 10000); // Define a variável fora do intervalo
 
-const randomSeconds = Math.round(Math.random() * 10000); // Gera segundos aleatórios até 10 segundos
+setInterval(function() {
+  const iframeUrl = document.getElementById('my-iframe').src;
+
+  // Codifica a URL e adiciona como parâmetro de consulta na próxima página
+  const encodedUrl = encodeURIComponent(iframeUrl);
+  const nextPageUrl = `home1.html?iframeUrl=${encodedUrl}`;
+
+  // Redireciona para a próxima página
+  window.location.href = nextPageUrl;
+
 }, randomSeconds);
-	</script>
 
 
 </body>
