@@ -1,0 +1,89 @@
+	<style>
+		body {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100vh;
+                        margin: 0;
+                        background-color: #f5f5f5;
+                        background-image: url("/img/back.jpg");
+                        background-size: cover;
+                        background-position: center;
+                     }
+
+
+		
+		.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 0 50px 0 50px;
+  width: 400px;
+  margin: auto;
+}
+
+		h1 {
+			font-size: 24px;
+			margin: 0 0 20px;
+			text-align: center;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		input[type="text"] {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 16px;
+			width: 100%;
+			margin-bottom: 20px;
+			box-sizing: border-box;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: all 0.3s;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+
+                .menu {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  margin: 20px auto;
+}
+
+.menu button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 5px;
+}
+
+.menu button:hover {
+  background-color: #666;
+}
+	</style>
