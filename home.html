@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Home</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		body, html {
 			height: 100%;
@@ -17,44 +17,32 @@
 			height: 100vh;
 			border: none;
 		}
-		
 	</style>
 </head>
 <body onload="carregarUrl()">
 
 	<iframe id="my-iframe" width="560" height="315" title="Iframe"></iframe>
 
-	<script src="substituirurl.js"></script>
 	<script>
 		function carregarUrl() {
 			const params = new URLSearchParams(window.location.search);
 			const url = params.get('url');
 			substituirIframe(url);
 		}
-	
-		const params = new URLSearchParams(window.location.search);
-		const iframeUrl = params.get('iframeUrl');
-		document.getElementById('my-iframe').src = iframeUrl;
-		setInterval(function() {
-			const iframeUrl = document.getElementById('my-iframe').src;
+		
+		function substituirIframe(url) {
+			document.getElementById('my-iframe').src = url;
+		}
+		
+		function pressF5() {
+			var event = new KeyboardEvent('keydown', { key: 'F5' });
+			document.dispatchEvent(event);
+		}
 
-  // Codifica a URL e adiciona como parâmetro de consulta na próxima página
- //  const encodedUrl = encodeURIComponent(iframeUrl);
- // const nextPageUrl = `home1.html?iframeUrl=${encodedUrl}`;
-
-  // Redireciona para a próxima página
-  //window.location.href = nextPageUrl;
-		//}, 7000);
-	<script>
-	function pressF5() {
-  var event = new KeyboardEvent('keydown', { key: 'F5' });
-  document.dispatchEvent(event);
-}
-
-// Executar a função a cada 15 segundos
-setInterval(pressF5, 15000)
-</script>
-
+		// Executar a função a cada 15 segundos
+		setInterval(pressF5, 15000);
+	</script>
 </body>
 </html>
+
 
