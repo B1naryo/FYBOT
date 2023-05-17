@@ -2,45 +2,6 @@
 <html>
 <head>
 	<title>Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style>
-		body, html {
-			height: 100%;
-			margin: 0;
-			padding: 0;
-		}
-		iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100vw;
-			height: 100vh;
-			border: none;
-		}
-	</style>
-</head>
-<body onload="carregarUrl()">
-
-	<iframe id="my-iframe" width="560" height="315" title="Iframe"></iframe>
-
-	<script>
-		function carregarUrl() {
-			const params = new URLSearchParams(window.location.search);
-			const url = params.get('url');
-			substituirIframe(url);
-		}
-		
-		function substituirIframe(url) {
-			document.getElementById('my-iframe').src = url;
-		}
-		
-		function pressF5() {
-			var event = new KeyboardEvent('keydown', { key: 'F5' });
-			document.dispatchEvent(event);
-		}<!DOCTYPE html>
-<html>
-<head>
-	<title>Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 	<style>
 		body, html {
@@ -64,12 +25,6 @@
 	<iframe id="my-iframe" width="560" height="315" title="Iframe"></iframe>
 
 	<script src="substituirurl.js"></script>
-	<script>function pressF5() {
-  var event = new KeyboardEvent('keydown', { key: 'F5' });
-  document.dispatchEvent(event);
-}
-</script>
-
 	<script>
 		function carregarUrl() {
 			const params = new URLSearchParams(window.location.search);
@@ -89,14 +44,12 @@
 
   // Redireciona para a próxima página
   window.location.href = nextPageUrl;
-			// Executar a função a cada 15 segundos
-setInterval(pressF5, 15000);
-		}, 1000000000000);
+		}, 15000);
 	</script>
-
 
 
 </body>
 </html>
+
 
 
