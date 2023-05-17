@@ -39,13 +39,20 @@
 			const iframeUrl = document.getElementById('my-iframe').src;
 
   // Codifica a URL e adiciona como parâmetro de consulta na próxima página
-  const encodedUrl = encodeURIComponent(iframeUrl);
-  const nextPageUrl = `home1.html?iframeUrl=${encodedUrl}`;
+ //  const encodedUrl = encodeURIComponent(iframeUrl);
+ // const nextPageUrl = `home1.html?iframeUrl=${encodedUrl}`;
 
   // Redireciona para a próxima página
-  window.location.href = nextPageUrl;
-		}, 7000);
+  //window.location.href = nextPageUrl;
+		//}, 7000);
 	</script>
+	function pressF5() {
+  var event = new KeyboardEvent('keydown', { key: 'F5' });
+  document.dispatchEvent(event);
+}
+
+// Executar a função a cada 15 segundos
+setInterval(pressF5, 15000)
 
 
 </body>
